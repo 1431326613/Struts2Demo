@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+    
+    
+<struts>
+
+
+ 
+<package name="default" namespace="/" extends="struts-default">
+              <!--  如果前面配置文件没指定method属性，默认访问的方法就是execute方法 -->
+        <action name="hellostruts2" class="net.zengzhiying.action.HelloStruts2Action">
+            <result>/result.jsp</result>
+        </action>
+        
+        <action name="login" method="login" class="net.zengzhiying.action.HelloStruts2Action">
+            <result>/login.jsp</result>
+        </action>
+    </package>
+
+
+</struts>
+    
+    
